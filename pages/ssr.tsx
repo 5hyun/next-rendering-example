@@ -17,7 +17,6 @@ function Ssr({ users }: Props) {
 }
 
 export async function getServerSideProps() {
-  // const res = await fetch("http://localhost:3000/user.json");
   const res = await fetch("https://jsonplaceholder.typicode.com/users");
   const users = await res.json();
 
